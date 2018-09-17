@@ -9,6 +9,15 @@
 
 // Your code :
 
+function sameSign(x, y) {
+	if (((x > 0) && (y > 0)) || ((x < 0) && (y < 0)) || (x === y)) {
+	return true
+	}
+	else {
+	return false
+	}
+}
+
 //* Begin of tests
 const assert = require('assert')
 
