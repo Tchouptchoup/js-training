@@ -11,16 +11,16 @@
 // Your code :
 
 function multiply(x, y) {
-	if (y < 0) {
+	if ((x === 0) || (y ===0)) {
+	return 0
+	}
+	else if (y < 0) {
 	y = -y
 	let total = 0
 	for (let i = 0 ; i < y ; i += 1) {
 	total = total + x
 	}
 	return -total
-	}
-	else if ((x === 0) || (y ===0)) {
-	return 0
 	}
 	else {
 	let total = 0
