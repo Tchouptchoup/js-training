@@ -19,6 +19,9 @@ function multiply(x, y) {
 	}
 	return -total
 	}
+	else if ((x === 0) || (y ===0)) {
+	return 0
+	}
 	else {
 	let total = 0
 	for (let i = 0 ; i < y ; i += 1) {
