@@ -10,10 +10,16 @@
  *
  */
 
-
+function jadenCase(x) {
+	let jadenTable = x.split(' ');
+	for (let index = 0 ; index < jadenTable.length ; index += 1) {
+	jadenTable[index] = jadenTable[index].charAt(0).toUpperCase() + jadenTable[index].slice(1, jadenTable[index].length)
+	}
+	return jadenTable.join(' ');
+}
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.strictEqual(jadenCase('How are you ?'), 'How Are You ?')
 // End of tests */
